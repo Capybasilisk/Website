@@ -1,0 +1,36 @@
+<header class="header">
+
+<!-- Default Statcounter code for Website http://capybasilisk.com -->
+<script type="text/javascript">
+var sc_project=12459339; 
+var sc_invisible=1; 
+var sc_security="ef9f7e26"; 
+var sc_https=1; 
+var sc_remove_link=1; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><img class="statcounter"
+src="https://c.statcounter.com/12459339/0/ef9f7e26/1/" alt="Web
+Analytics"></div></noscript>
+<!-- End of Statcounter Code -->
+                 
+    <span class="header__inner">
+        {{ partial "logo.html" . }}
+         
+
+        <span class="header__right">
+            {{ if len .Site.Menus }}
+                {{ partial "menu.html" . }}
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            {{ end }}
+
+            <span class="theme-toggle unselectable">{{ partial "theme-icon.html" . }}</span>
+        </span>
+    </span>
+</header>
